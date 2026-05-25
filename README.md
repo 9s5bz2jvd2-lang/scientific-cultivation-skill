@@ -3,7 +3,7 @@
 > **护元气，凝心神，祛魔除秽，证我长生。**  
 > **Tend the vital energy, gather the mind, clear the inner noise, and make the practice sustainable.**
 
-**科学修仙** 是一个面向 AI agent 的“健康使用 AI 节奏护栏”skill。
+**科学修仙** 是一个面向 AI agent 的“收功回环 / return-to-context ritual”skill：它不是普通喝水休息提醒，而是先把高密度 AI 协作收成可返回的结构，再温柔护元气。
 
 它不是让 agent 停工，也不是让人停止创造；它要做的是：当人因为 AI 太快、太顺、太能产出而进入“上头、焦躁、熬夜、停不下来”的状态时，agent 在自然回复节点温柔提醒、封存现场、降低刺激、帮助人离屏休息，并保证回来还能继续。
 
@@ -21,6 +21,9 @@ It does not shut the agent down. It does not shame the user. It does not kill cr
 | `SKILL_EN.md` | English edition: an agent-facing version of the same method |
 | `reference/scientific-framework.md` | 中文科学骨架：控制论、复杂系统、信息、天体物理、认知科学等隐喻边界 |
 | `reference/health-safety-note.md` | 健康提醒参考：久坐、熬夜、烟酒、急症边界 |
+| `reference/return-contract.md` | 收功回环单 schema：Markdown + JSON 的字段约定 |
+| `reference/lingtai-architecture-mechanism.md` | 结合灵台架构的机制层报告：durable store、daemon/avatar/molt 回收、CLI 接入路径 |
+| `scripts/shougong.py` | 可运行收功单生成器：输入任务状态 JSON，输出 Markdown + JSON 收功单 |
 | `CONTRIBUTOR_NOTE.md` | 圆酱的中英双语个人说明 |
 
 ---
@@ -44,6 +47,23 @@ it protects the body.
 It does not extinguish the furnace;
 it adjusts the fire.
 ```
+
+---
+
+## 可运行程序 / Runnable tool
+
+本仓库现在不只是一份 skill 文本，还包含一个最小可用程序：
+
+```bash
+python3 scripts/shougong.py --demo --which all --out-dir tmp/shougong_demo
+```
+
+它会生成“收功回环单”：
+
+- Markdown：给人看，知道已成什么、未闭什么、回来从哪接；
+- JSON：给 agent / 下次会话看，保留结构化 Return Contract。
+
+自定义输入示例见 `reference/return-contract.md` 与 `USAGE.md`。
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: 科学修仙
-description: 当用户长时间、高兴奋、高密度地使用 AI，如修士得灵气而不知收功、连续让 agent 产出/改稿/生成/部署/调研，出现停不下来、熬夜、焦躁、上头时使用。此技不是普通“喝水休息”提醒，而是灵台式收功回环机制：先把散乱任务收束成可返回的圆，结丹为阶段成果，立下续功入口，再温柔护元气；不阻断 agent、不熄后台炉火，使人敢离屏休息，回来仍能续前功。
-version: 1.5.3
+description: 当用户长时间、高兴奋、高密度地使用 AI，如修士得灵气而不知收功、连续让 agent 产出/改稿/生成/部署/调研，出现停不下来、熬夜、焦躁、上头时使用。此技不是普通“喝水休息”提醒，而是灵台式收功回环机制：先把散乱任务收束成可返回的圆，结丹为阶段成果，立下续功入口，再温柔护元气；并提供可运行脚本 scripts/shougong.py，把当前任务状态生成 Markdown + JSON 收功单。不阻断 agent、不熄后台炉火，使人敢离屏休息，回来仍能续前功。
+version: 1.6.0
 tags: [wellbeing, ai-use, break-reminder, human-care, lingtai, cultivation]
 ---
 
@@ -46,6 +46,65 @@ tags: [wellbeing, ai-use, break-reminder, human-care, lingtai, cultivation]
 > 我已替你把这一轮收成圆：已成何物，未竟何事，后台何如，回来从何处接。你可以放心离开。
 
 此即“收功”之义。不是封印人，也不是停掉 AI；乃是将散乱高功耗状态，收回一个可续、可审、可再展开的低功耗圆。
+
+## 可用程序：收功回环单生成器
+
+科学修仙必须能落成程序，而不只是好听的话。本 skill 附带一个最小可用脚本：
+
+```text
+scripts/shougong.py
+```
+
+它做一件事：把一轮高密度 AI 协作按 **Return Contract** 收成两份产物：
+
+- **Markdown 收功单**：给人看，说明这一炉已成什么、未闭什么、后台谁在守、回来从哪一句接；
+- **JSON 结构副本**：给 agent / 下次会话看，保留字段级状态，避免下次靠记忆重猜。
+
+### 最小运行
+
+在 skill 根目录或公开仓库根目录运行：
+
+```bash
+python3 scripts/shougong.py --demo --which all --out-dir tmp/shougong_demo
+```
+
+它会生成两组 demo：
+
+1. 论文写作收功单；
+2. Claude Code / daemon 苦力收功单。
+
+也可传入自己的 JSON：
+
+```bash
+python3 scripts/shougong.py --input state.json --out-dir tmp/shougong
+cat state.json | python3 scripts/shougong.py --input - --stdout
+```
+
+### 最小输入字段
+
+```json
+{
+  "session_goal": "这一炉为何而起",
+  "current_state": "此刻停在哪里",
+  "next_entrypoint": "回来后照抄的一句话续功入口"
+}
+```
+
+可选字段包括：`completed_artifacts`、`open_loops`、`background_tasks`、`evidence_or_files`、`do_not_continue_list`、`crystallization_targets`、`human_energy_state`、`safety_boundary`。详见 `reference/return-contract.md`。
+
+### 程序边界
+
+`scripts/shougong.py` 是最小手动闸，不自动改 pad、不自动提交 git、不自动停止 daemon、不自动发微信。它只把状态收成 artifact。后续若接入灵台，可按三步走：
+
+1. **read-only collector**：自动读取 CURRENT_PROJECTS、daemon list、exports 文件清单，只生成草稿；
+2. **dry-run write-back**：展示将写入 pad / knowledge / skill 的 patch，让 agent 或人确认；
+3. **trajectory_id 合流**：让 daemon/avatar/molt 的回传都带同一套 Return Contract。
+
+### 机制层口令
+
+> 先封现场，再护元气。  
+> 先收成圆，再劝离屏。  
+> 没有 Markdown + JSON 收功单的“提醒”，只是提醒；有可续接 contract 的收功，才是科学修仙。
 
 ## 宗旨
 

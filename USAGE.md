@@ -49,3 +49,51 @@ Minimal procedure:
 For ordinary prolonged sitting: water, eye rest, ankle pumps, heel raises, walking in place. After long sitting or sleep deprivation, start gently and avoid sudden vigorous exercise. Reduce alcohol and tobacco.
 
 For serious symptoms: chest pain/tightness, shortness of breath, cold sweat, fainting feeling, or possible stroke/pulmonary embolism signs — do not suggest movement; advise emergency help.
+
+
+## 收功回环单 CLI
+
+这不是标准文档，而是可运行程序。
+
+### Demo
+
+```bash
+python3 scripts/shougong.py --demo --which all --out-dir tmp/shougong_demo
+```
+
+输出：
+
+```text
+tmp/shougong_demo/shougong-paper-<date>.md
+tmp/shougong_demo/shougong-paper-<date>.json
+tmp/shougong_demo/shougong-claude-code-<date>.md
+tmp/shougong_demo/shougong-claude-code-<date>.json
+```
+
+### 自定义输入
+
+`state.json` 最小例子：
+
+```json
+{
+  "session_goal": "把科学修仙 skill 从提醒改成可用收功程序",
+  "current_state": "CLI 已完成 demo，准备并入仓库",
+  "next_entrypoint": "继续科学修仙：测试 shougong.py 并更新 README"
+}
+```
+
+运行：
+
+```bash
+python3 scripts/shougong.py --input state.json --out-dir tmp/shougong
+cat state.json | python3 scripts/shougong.py --input - --stdout
+```
+
+### 它不做什么
+
+- 不自动停止 daemon / Claude Code / 后台任务；
+- 不自动发微信；
+- 不自动改 pad 或 knowledge；
+- 不做医学诊断。
+
+它只做“收成可返回的结构”：一份人能看的 Markdown，一份 agent 能读的 JSON。
