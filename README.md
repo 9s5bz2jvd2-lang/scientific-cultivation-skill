@@ -91,6 +91,14 @@ The agent should:
 
 ---
 
+## 提醒语气 / Reminder tone
+
+提醒用户时不要像弹窗警告。先肯定成果、封存现场，再温柔提醒休息；医学风险只短短点到，严重症状才明确建议急救。
+
+Do not sound like a warning popup. Affirm the milestone, seal the worksite, then gently invite rest. Mention medical boundaries briefly; only serious symptoms need an explicit emergency-care instruction.
+
+---
+
 ## 健康提醒边界 / Health safety boundary
 
 本 skill 可以提醒用户休息、喝水、休息眼睛、减少久坐、少喝酒、少抽烟。久坐后建议从轻柔活动开始，例如踝泵、踮脚后跟、原地走动；长期熬夜或久坐后不要立刻剧烈运动。

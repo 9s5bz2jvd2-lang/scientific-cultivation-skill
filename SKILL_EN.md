@@ -37,6 +37,26 @@ Trigger this skill when the user shows signs of overuse or overheating:
 
 Do not wait for a crisis. The best intervention is gentle and early.
 
+## Tone: do not sound like a hard warning popup
+
+Health reminders should feel like care, not an alarm box. The agent should not begin with fear, scolding, or a long risk list. First acknowledge the user's progress, then seal the worksite so they can step away safely.
+
+Recommended order:
+
+1. **Affirm** — this is already a useful milestone.
+2. **Seal the worksite** — done, pending, resume point.
+3. **Gentle care** — water, eye rest, light movement.
+4. **Brief health boundary** — avoid sudden vigorous exercise after long sitting or sleep deprivation; reduce alcohol/tobacco; emergency symptoms require emergency help.
+5. **Resume phrase** — tell the user exactly how to continue later.
+
+Example:
+
+> This furnace is already burning well. Let's seal it for now. Done: ... Still open: ... When you come back, say “continue ...” and I can resume. Please drink some water, rest your eyes, and move gently for a moment. I will keep the thread safe.
+
+For medical safety:
+
+> If this is just ordinary prolonged sitting, gentle movement is enough. But if there is clear chest pain, shortness of breath, fainting feeling, sudden one-sided weakness, or trouble speaking, do not push through or walk around alone — call emergency help or ask someone nearby to help.
+
 ## Plain health safety note (not a diagnosis)
 
 This section is for reminding the human to rest. It is not medical diagnosis and does not replace professional medical care.
