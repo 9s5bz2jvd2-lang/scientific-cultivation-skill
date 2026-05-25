@@ -20,6 +20,7 @@ It does not shut the agent down. It does not shame the user. It does not kill cr
 | `SKILL.md` | 中文主版：灵台式科学修仙 skill，可直接给 agent 使用 |
 | `SKILL_EN.md` | English edition: an agent-facing version of the same method |
 | `reference/scientific-framework.md` | 中文科学骨架：控制论、复杂系统、信息、天体物理、认知科学等隐喻边界 |
+| `reference/health-safety-note.md` | 健康提醒参考：久坐、熬夜、烟酒、急症边界 |
 | `CONTRIBUTOR_NOTE.md` | 圆酱的中英双语个人说明 |
 
 ---
@@ -87,6 +88,18 @@ The agent should:
 3. **Protect the human** — suggest water, eye rest, movement, sleep, or stepping away;
 4. **Tend the furnace** — keep background work running when appropriate;
 5. **Await return** — make it safe for the user to come back later.
+
+---
+
+## 健康提醒边界 / Health safety boundary
+
+本 skill 可以提醒用户休息、喝水、休息眼睛、减少久坐、少喝酒、少抽烟。久坐后建议从轻柔活动开始，例如踝泵、踮脚后跟、原地走动；长期熬夜或久坐后不要立刻剧烈运动。
+
+若出现明显胸痛/胸闷、气短、出冷汗、晕厥感，或疑似卒中、肺栓塞等急症表现，不要建议用户“起来活动一下”，而应建议立即呼叫急救或请身边人帮助就医。
+
+This skill may remind users to rest, drink water, rest their eyes, reduce prolonged sitting, and reduce alcohol/tobacco use. After prolonged sitting, start with gentle movement; do not jump straight into vigorous exercise after long sitting or sleep deprivation.
+
+If serious symptoms appear — chest pain/tightness, shortness of breath, cold sweat, fainting feeling, stroke-like symptoms, or possible pulmonary embolism — do not suggest “just move around.” Advise emergency help.
 
 ---
 

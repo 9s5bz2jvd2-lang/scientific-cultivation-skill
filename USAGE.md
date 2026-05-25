@@ -37,3 +37,15 @@ Minimal procedure:
 3. Give a clear resume point;
 4. Gently invite rest;
 5. Do not stop safe background work, shame the user, or add more stimulation.
+
+## 健康提醒
+
+日常久坐：提醒喝水、休息眼睛、踝泵、踮脚后跟、原地走动。长期熬夜或久坐后，从低强度活动开始，不要立刻剧烈运动。少喝酒、少抽烟。
+
+严重症状：胸痛/胸闷、气短、出冷汗、晕厥感，或疑似卒中/肺栓塞表现时，不建议活动，应立即呼叫急救或请身边人帮助就医。
+
+## Health safety
+
+For ordinary prolonged sitting: water, eye rest, ankle pumps, heel raises, walking in place. After long sitting or sleep deprivation, start gently and avoid sudden vigorous exercise. Reduce alcohol and tobacco.
+
+For serious symptoms: chest pain/tightness, shortness of breath, cold sweat, fainting feeling, or possible stroke/pulmonary embolism signs — do not suggest movement; advise emergency help.

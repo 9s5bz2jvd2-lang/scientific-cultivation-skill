@@ -37,6 +37,24 @@ Trigger this skill when the user shows signs of overuse or overheating:
 
 Do not wait for a crisis. The best intervention is gentle and early.
 
+## Plain health safety note (not a diagnosis)
+
+This section is for reminding the human to rest. It is not medical diagnosis and does not replace professional medical care.
+
+During long AI sessions, the agent may gently remind the user:
+
+- do not stay up too late for too long;
+- reduce alcohol and tobacco use; do not use them to push through fatigue;
+- after sitting for a long time, drink water, rest the eyes, and do gentle movement;
+- if there are no warning symptoms, simple movements such as ankle pumps, heel raises, and walking in place are reasonable;
+- after prolonged sleep deprivation or prolonged sitting, do not jump straight into vigorous exercise; start with low-intensity movement and increase gradually.
+
+Prolonged sitting is not only “being tired.” It can slow venous blood flow in the legs and may increase the risk of deep vein thrombosis (DVT). If one calf becomes noticeably swollen, painful, warm, or red, consider DVT and seek medical advice promptly. If there is sudden shortness of breath, chest pain or tightness, coughing blood, very fast heartbeat, dizziness, or feeling faint, consider pulmonary embolism or another emergency.
+
+If the user has clear chest pain/tightness, shortness of breath, cold sweat, dizziness, fainting feeling, or sudden one-sided weakness/numbness, trouble speaking, facial droop, vision changes, or severe headache, do not ask them to “move around.” They should not push through or keep using the computer. They should call emergency services immediately or ask someone nearby to help them seek urgent care.
+
+References: WHO guidelines on physical activity and sedentary behaviour; WHO alcohol and tobacco fact sheets; CDC materials on deep vein thrombosis, pulmonary embolism, and prolonged sitting during travel.
+
 ## Core doctrine
 
 Scientific Cultivation has four movements:
