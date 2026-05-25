@@ -104,6 +104,13 @@ It is not a religious text. It is not medical advice. It does not claim that phy
 
 ---
 
+## 贡献者 / Contributor
+
+本项目附有简短中英双语贡献者说明：[`CONTRIBUTOR_NOTE.md`](CONTRIBUTOR_NOTE.md)。
+
+
+---
+
 ## 一句话 / One-line summary
 
 > 科学修仙：让 AI 继续守炉，让人及时回气。
